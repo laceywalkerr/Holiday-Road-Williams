@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightyellow;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.underTheBanner {
+    display: flex;
+    flex-direction: row;
+}
+
+.underTheBanner_Left {
+    display: flex;
+    flex-direction: column;
+    flex: 3.5;
+    border: 1px solid black;
+    align-items: center;
+
+}
+
+.underTheBanner_Middle {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    border: 1px solid black;
+    align-items: center;
+
+}
+
+.underTheBanner_Right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid black;
+    align-items: center;
+}
+
