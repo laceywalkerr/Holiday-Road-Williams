@@ -9,11 +9,12 @@ getNationalParksData().then(
         nationalParksList(response.data)
     }
 )
-console.log(API)
 
-getWeatherData().then(
-    () => {
-        console.log(response.data)
-        weatherList(response.data)
+=======
+getAttractionData().then(
+    ()=> {
+        attractionList(attractionCollection)
     }
 )
+
+>>>>>>> 8fd47ca7fb4ca44f96a5d2cbbf07bb1eaa0e9222
