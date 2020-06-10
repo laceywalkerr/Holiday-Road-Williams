@@ -4,7 +4,7 @@ const weatherList = (response) => {
 
     for (const currentweatherObject of response) {
 
-        const weatherHTML = weatherConverter(currentNationalParksObject)
+        const weatherHTML = weatherConverter(currentweatherObject)
 
         const weatherArticleElement = document.querySelector("#weather_dropdown")
 

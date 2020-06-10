@@ -10,3 +10,10 @@ getNationalParksData().then(
     }
 )
 console.log(API)
+
+getWeatherData().then(
+    () => {
+        console.log(response.data)
+        weatherList(response.data)
+    }
+)
