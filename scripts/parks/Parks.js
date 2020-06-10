@@ -6,12 +6,16 @@ an HTML string that it will return to a variable "objectHTMLRepresentativ" */
 //my paramater is what i am passing through the function, and my paramater is defined
 //by the contents insie {} and then returned to a variable that the parameter is defining,
 // both those also happen inside the {} 
-const quotesConverter = (quotesObject) => {
-    const quotesHTMLRepresentation = `<section class="quote">${quotesObject.quote} 
-                                    <a class="quote__author">${quotesObject.author}</a>
-                                    </section>`
+const nationalParksConverter = (nationalParksObject) => {
+    const nationalParksHTMLRepresentation = `
+    <label for="nationalParks_dropdown">Choose a National Park:</label>
+    <select name="nationalParks_dropdown" id="nationalParks_dropdown">
+        <option value="">Start Here</option>
+        <option value="NP1">${nationalParksObject.fullName}</option>
+        <option value="NP2">N2</option>
+    </select>`
 
-    return quotesHTMLRepresentation
+    return nationalParksHTMLRepresentation
 }
 
 // had an issue on this page where i had quotesconverter.quote and same for .author, and it was returning undefined for both keys i was trying to access.
