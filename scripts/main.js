@@ -9,4 +9,9 @@ getNationalParksData().then(
         nationalParksList(response.data)
     }
 )
-console.log(API)
+getAttractionData().then(
+    ()=> {
+        attractionList(attractionCollection)
+    }
+)
+
