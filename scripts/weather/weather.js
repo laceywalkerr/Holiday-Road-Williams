@@ -1,6 +1,6 @@
 const weatherConverter = (weatherObject) => {
     const weatherHTMLRepresentation = 
-        `<option value="NP1">${weatherObject.fullName}</option>`
+        `<option value="#">${weatherObject.fullName}</option>`
 
     return weatherHTMLRepresentation
 }
