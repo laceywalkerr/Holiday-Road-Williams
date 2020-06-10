@@ -8,7 +8,7 @@ const nationalParksList = (response) => {
 
         const nationalParksHTML = nationalParksConverter(currentNationalParksObject)
 
-        const nationalParksArticleElement = document.querySelector(".nationalParks_list")
+        const nationalParksArticleElement = document.querySelector("#nationalParks_dropdown")
 
         nationalParksArticleElement.innerHTML += nationalParksHTML
 
