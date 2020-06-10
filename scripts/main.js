@@ -1,0 +1,5 @@
+getEateriesData().then(
+    () => {
+        eateriesList(eateriesCollection)
+    }
+)
