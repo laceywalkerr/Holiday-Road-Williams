@@ -8,7 +8,7 @@ an HTML string that it will return to a variable "objectHTMLRepresentativ" */
 // both those also happen inside the {} 
 const nationalParksConverter = (nationalParksObject) => {
     const nationalParksHTMLRepresentation = 
-        `<option value="NP1">${nationalParksObject.fullName}</option>`
+        `<option value="${nationalParksObject.id}">${nationalParksObject.fullName}</option>`
 
     return nationalParksHTMLRepresentation
 }
