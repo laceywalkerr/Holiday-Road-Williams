@@ -1,3 +1,8 @@
+getEateriesData().then(
+    () => {
+        eateriesList(eateriesCollection)
+    }
+)
 getNationalParksData().then(
     (response) => {
         console.log(response.data)
