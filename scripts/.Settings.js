@@ -1,5 +1,5 @@
 export default {
-    raphhopperKey: "",
+    graphhopperKey: "",
     npsKey: "",
     weatherKey: ""
 }

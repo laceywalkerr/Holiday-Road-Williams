@@ -1,7 +1,7 @@
 let weatherCollection = []
 
 const getWeatherData = () => {
-    return fetch(`pro.openweathermap.org/data/2.5/forecast/hourly?q={Nashville}&appid={0a2e6c6371949d84048b4e18daa54cc8}`).then(
+    return fetch(`https://developer.nps.gov/api/v1/parks?&limit=4&api_key=${API.weatherKey}`).then(
         (response) => {
             return response.json()
         }
