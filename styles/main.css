@@ -1,44 +1,66 @@
+html {
+    background-color: #A9C7C1;
+    background-size: cover;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    background-color: lightyellow;
+    color:#3b3a41;
 }
 
 .banner {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-    align-items: center;
+    font-family: 'Pacifico', cursive;
+    align-items: left;
+    font-size: 35px;
+    color: #3b3a41;
+    border-bottom: 2px solid #3b3a41;
 }
 
 .underTheBanner {
     display: flex;
     flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
 }
 
 .underTheBanner_Left {
     display: flex;
     flex-direction: column;
-    flex: 3.5;
-    border: 1px solid black;
+    flex: 2;
+    border: 1px solid #A9C7C1;
     align-items: center;
-
+    text-align: center;
+    margin: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: white;
+    padding: 15px;
 }
 
 .underTheBanner_Middle {
     display: flex;
     flex-direction: column;
-    flex: 2;
-    border: 1px solid black;
+    flex: 3.5;
+    border: 1px solid  #A9C7C1;
     align-items: center;
-
+    text-align: center;
+    margin: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: white;
+    padding: 15px;
 }
 
 .underTheBanner_Right {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    border: 1px solid black;
+    flex: 2;
+    border: 1px solid #A9C7c1;
     align-items: center;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 10px 10px 8px #888888;
+    background-color: white;
+    padding: 15px;
 }
-
