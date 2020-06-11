@@ -5,7 +5,7 @@ const eateriesConverter = (eateriesObject) => {
 
     const eateriesHTMLRepresentation = 
 
-`<option value="Eatery Options">${eateriesObject.businessName}</option>`
+`<option value="${eateriesObject.businessName}">${eateriesObject.businessName}</option>`
     
 
     return eateriesHTMLRepresentation
