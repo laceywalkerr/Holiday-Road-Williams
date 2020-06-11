@@ -16,13 +16,13 @@ const nationalParksList = (response) => {
 }
 
 //responsible for listening to a click on button (located below the nav bar) to toggle quotes class
-const stateDropdownBox = document.querySelector("#nationalParks_query_dropdown")
+const stateDropdownBox = document.querySelector("#nationalParks_dropdown")
 
 stateDropdownBox.addEventListener("change", (event) => {
-let stateCode = event.target.value
+const stateCode = event.target.value
+
+
 console.log("this is state code", stateCode)
 return stateCode
 
 })
-
-
