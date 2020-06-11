@@ -12,6 +12,10 @@ const nationalParksConverter = (nationalParksObject) => {
 
     return nationalParksHTMLRepresentation
 }
+// const nationalParksStateCodeConverter = (nationalparksObject2) => {
+//     const nationalParksStateCode = `${nationalparksObject2.stateCode}`
+//     return nationalParksStateCode
+// }
 
 // had an issue on this page where i had quotesconverter.quote and same for .author, and it was returning undefined for both keys i was trying to access.
 // this make sense because the string was attempting to access array data from quotesconverter, which was just defined?....
