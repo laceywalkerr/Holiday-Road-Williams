@@ -9,9 +9,16 @@ getNationalParksData().then(
         nationalParksList(response.data)
     }
 )
+
+getWeatherData().then(
+    (response) => {
+        console.log(response.data)
+        weatherList(response.data)
+    }
+)
+
 getAttractionData().then(
     ()=> {
         attractionList(attractionCollection)
     }
 )
-
