@@ -2,12 +2,12 @@ const weatherConverter = (weatherObject) => {
     console.log(weatherObject)
     const weatherHTMLRepresentation = 
         `
-        <h1>hi</h1>
         <section> 
+            <h2></h2>
             <div>Date: ${weatherObject.main.dt_text}</div>
             <div>City: ${weatherObject.main.name}</div>
-            <div>Highest Temp: ${weatherObject.main.temp_max}</div>
-            <div>Lowest Temp: ${weatherObject.main.temp_min}</div>
+            <div>Highest Temp: ${weatherObject.main.temp_max}&deg;</div>
+            <div>Lowest Temp: ${weatherObject.main.temp_min}&deg;</div>
             <div>Humidity: ${weatherObject.main.humidity}</div>
         </section>`
 
