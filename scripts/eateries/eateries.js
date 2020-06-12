@@ -21,8 +21,8 @@ const eateriesDetailsConverter = (eateriesDetailsObject) => {
     
 
     return eateriesDetailsHTMLRepresentation
+    
 
 }
 
-
-
+console.log(eateriesConverter)

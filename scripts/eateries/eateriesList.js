@@ -40,7 +40,7 @@ const eateriesDetailButton = document.querySelector("#eateries_dropdown")
 
 eateriesDropdownBox.addEventListener("change", (clickEvent) => {
     
-    // Get the value of the eatery chosen by the user
+    // Get the value of the eatery chosen by the user, refrence and grab description
     const eateriesDetailsDescription = clickEvent.target.value
 
     const eateriesDetailsElement = document.querySelector(".itineraryPreview_eateriesDetails")
