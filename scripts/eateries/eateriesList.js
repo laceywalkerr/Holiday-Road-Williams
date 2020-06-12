@@ -51,3 +51,20 @@ eateriesDropdownBox.addEventListener("change", (clickEvent) => {
 // }
 
 
+
+const eateriesDetails = (eateriesResponse, eateriesUserChoice) => {
+    console.log(eateriesCollection)
+
+    for (const eateriesDetailsObject of eateriesResponse) {
+        if (eateriesDetailsObject.businessName === eateriesUserChoice) {
+            const eateriesDetailsHTML = eateriesDetailsConverter(currentEateriesDetailsObject)
+
+            const eateriesDetailsElement = document.querySelector(".itineraryPreview_eateriesDetails")
+            console.log(eateriesDetailsHTML)
+            eateriesDetailsElement.innerHTML += eateriesDetailsHTML
+        }
+
+    }
+
+}
+    

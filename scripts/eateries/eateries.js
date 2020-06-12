@@ -17,7 +17,7 @@ const eateriesDetailsConverter = (eateriesDetailsObject) => {
 
     const eateriesDetailsHTMLRepresentation = 
 
-    `${eateriesDetailsObject.description}`
+    `<details>${eateriesDetailsObject.description}</details>`
     
 
     return eateriesDetailsHTMLRepresentation
