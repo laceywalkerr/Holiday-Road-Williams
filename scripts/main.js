@@ -10,13 +10,6 @@ getNationalParksData().then(
     }
 )
 
-getWeatherData().then(
-    (response) => {
-        console.log(response)
-        weatherList(response)
-    }
-)
-
 getAttractionData().then(
     ()=> {
         attractionList(attractionCollection)
