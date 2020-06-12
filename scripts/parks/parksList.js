@@ -15,14 +15,56 @@ const nationalParksList = (response) => {
     }
 }
 
-//responsible for listening to a click on button (located below the nav bar) to toggle quotes class
-const stateDropdownBox = document.querySelector("#nationalParks_dropdown")
+//responsible for listening to a click on a National Park object from the National Parks Dropdown Box.
+const npDropdownBox = document.querySelector("#nationalParks_dropdown")
 
-stateDropdownBox.addEventListener("change", (event) => {
-const stateCode = event.target.value
+npDropdownBox.addEventListener("change", (event) => {
+const npName = event.target.value
 
+const nationalParksParagrahElement = document.querySelector(".npUserChoice")
+nationalParksParagrahElement.innerHTML = npName
 
-console.log("this is state code", stateCode)
-return stateCode
+const nationalParksDetailsElement = nationalParksDetails(nationalParksCollection, npName)
+
 
 })
+
+
+// //responsible for creating a list national park details to turn into an html "details" element and injected into our np itinerary previewer. 
+const nationalParksDetails = (nationalParkResponse, npName) => {
+    console.log(nationalParksCollection)
+
+    for (const currentNationalParksDetailsObject of nationalParkResponse.data) {
+        if (currentNationalParksDetailsObject.fullName === npName) {
+            const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
+
+            const nationalParksDetailsElement = document.querySelector(".npButton")
+            console.log(nationalParksDetailsHTML)
+            nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
+        }
+
+    }
+}
+
+
+
+
+
+// //toggle button to hide the class (containing the data)
+// const fishVisibilityButton = document.querySelector(".itineraryPreview_parksDetailButton")
+
+// fishVisibilityButton.addEventListener("click", (clickEvent) => {
+
+
+//     document.querySelector(".npButton").classList.toggle("hidden")
+// })
+
+// const nationalParkDetails = document.querySelector(".npUserChoice")
+
+// nationalParkDetails.addEventListener("change", (event) => {
+// const npName = event.target.value
+// const nationalParksButtonElement = document.querySelector(".npUserChoice")
+// nationalParksParagramElement.innerHTML = npName
+
+
+// })
