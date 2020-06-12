@@ -1,3 +1,40 @@
+	*Project Status
+Development has been stopped early due to time constraint.
+
+ 	*Introduction
+This website is for finding national parks that you should totally visit! It is an application that allows users to build itineraries for their adventures.
+	
+	*Requirements
+The requirements for this project are to build an itinerary including details, weather, bizarre attractions, parks, and eateries, as well as properly pulling down and using API’s.
+
+    *Persona
+The persona we chose to base our project off of is Brittney, who favors sophisticated and easy to nagivate desgins. She wants to find the BEST places to visit without having a hard time planning, and we love that about her!
+
+    *Navigation
+Start with choosing a National Park Query Parameter
+Choose a National Park
+Choose an Attraction
+Choose an Eatery
+View Details
+View Weather for the next 3 days in that Location
+Save selections to Itinerary
+
+	*Future Plans
+We would like to make this project more robust in the future, adding more content and more options for the most optimal planning possible.
+
+	*Authors and Acknowledgements
+This webpage was created by Brett Stoudt, Kelley Crittenden, Lacey Walker and Rachael Wade.
+
+
+
+
+*************************************************************************************************
+
+
+
+
+
+
 # Holiday Road from Nashville
 
 You and your teammates have been contracted by the National Parks Service to build an application that will allow people to build itineraries for their trips to the beautiful national parks that they maintain. The starting point of each trip will be Nashville, TN, but the destination will a national park selected by the user.
