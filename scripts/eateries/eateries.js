@@ -24,5 +24,3 @@ const eateriesDetailsConverter = (eateriesDetailsObject) => {
     
 
 }
-
-console.log(eateriesConverter)

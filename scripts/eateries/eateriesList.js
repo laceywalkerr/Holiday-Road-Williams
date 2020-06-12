@@ -35,16 +35,19 @@ eateriesDropdownBox.addEventListener("change", (clickEvent) => {
 
 //Event listener - for details dialog - used to listen to eateries_dropdown and pull description from API
 
-const eateriesDetailButton = document.querySelector("#eateries_dropdown")
+// const nationalParksDetails = (nationalParkResponse, npName) => {
+//     console.log(nationalParksCollection)
+
+//     for (const currentNationalParksDetailsObject of nationalParkResponse.data) {
+//         if (currentNationalParksDetailsObject.fullName === npName) {
+//             const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
+
+//             const nationalParksDetailsElement = document.querySelector(".npButton")
+//             console.log(nationalParksDetailsHTML)
+//             nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
+//         }
+
+//     }
+// }
 
 
-eateriesDropdownBox.addEventListener("change", (clickEvent) => {
-    
-    // Get the value of the eatery chosen by the user, refrence and grab description
-    const eateriesDetailsDescription = clickEvent.target.
-
-    const eateriesDetailsElement = document.querySelector(".itineraryPreview_eateriesDetails")
-
-    eateriesDetailsElement.innerHTML = eateriesDetailsDescription
-    
-} )  
