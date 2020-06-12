@@ -23,7 +23,7 @@ const nationalParkDetailsConverter = (nationalParksObject) => {
             <li>Description: ${nationalParksObject.description}<li>
             <li>Phone Number: ${nationalParksObject.contacts.phoneNumbers[0].phoneNumber}<li>
             <li>Address: ${nationalParksObject.addresses[0].line1} 
-                        ${nationalParksObject.addresses[0].city} 
+                        ${nationalParksObject.addresses[0].city}, 
                         ${nationalParksObject.addresses[0].stateCode}
                         ${nationalParksObject.addresses[0].postalCode}
             <li>
