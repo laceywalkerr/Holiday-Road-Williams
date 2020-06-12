@@ -7,6 +7,16 @@ This website is for finding national parks that you should totally visit! It is 
 	*Requirements
 The requirements for this project are to build an itinerary including details, weather, bizarre attractions, parks, and eateries, as well as properly pulling down and using API’s.
 
+    *Persona
+The persona we chose to base our project off of is Brittney, who favors sophisticated and easy to nagivate desgins. She wants to find the BEST places to visit without having a hard time planning, and we love that about her!
+
+    *Navigation
+Start with choosing a National Park
+Choose an Attraction
+Choose an Eatery
+View Details
+View Weather for the next 3 days in that Location
+
 	*Future Plans
 We would like to make this project more robust in the future, adding more content and more options for the most optimal planning possible.
 
