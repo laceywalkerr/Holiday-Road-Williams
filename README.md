@@ -11,7 +11,8 @@ The requirements for this project are to build an itinerary including details, w
 The persona we chose to base our project off of is Brittney, who favors sophisticated and easy to nagivate desgins. She wants to find the BEST places to visit without having a hard time planning, and we love that about her!
 
     *Navigation
-Start with choosing a National Park
+Start with choosing a National Park Query Parameter
+Choose a National Park
 Choose an Attraction
 Choose an Eatery
 View Details
