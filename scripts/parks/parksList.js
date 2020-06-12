@@ -24,7 +24,7 @@ const npName = event.target.value
 const nationalParksParagrahElement = document.querySelector(".npUserChoice")
 nationalParksParagrahElement.innerHTML = npName
 
-const nationalParksDetailsElement = nationalParksDetails(nationalParksCollection, npName)
+nationalParksDetails(nationalParksCollection, npName)
 
 
 })
