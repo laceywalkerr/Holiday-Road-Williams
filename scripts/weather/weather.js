@@ -4,15 +4,13 @@ const weatherConverter = (weatherObject) => {
         `
         <section> 
             
-            <div>Date & Time:<br> ${weatherObject.dt_txt}</div>
-            <div>Weather: ${weatherObject.weather[0].description}</div>
-            <div>Current Temp: ${weatherObject.main.temp}&deg;</div>
-            <div>Feels Like: ${weatherObject.main.feels_like}&deg;</div>
-            <div>Highest Temp: ${weatherObject.main.temp_max}&deg;</div>
-            <div>Lowest Temp: ${weatherObject.main.temp_min}&deg;</div>
-            <div>Humidity: ${weatherObject.main.humidity}&#37;</div>
-            
-
+            <div><b>Date & Time:</b><br> ${weatherObject.dt_txt}</div> <br>
+            <div><b>Weather:</b> ${weatherObject.weather[0].description}</div>
+            <div><b>Current Temp:</b> ${weatherObject.main.temp}&deg;</div>
+            <div><b>Feels Like:</b> ${weatherObject.main.feels_like}&deg;</div>
+            <div><b>Highest Temp:</b> ${weatherObject.main.temp_max}&deg;</div>
+            <div><b>Lowest Temp:</b> ${weatherObject.main.temp_min}&deg;</div>
+            <div><b>Humidity:</b> ${weatherObject.main.humidity}&#37;</div>
             <br> 
         </section>`
 
