@@ -24,7 +24,8 @@ const npName = event.target.value
 const nationalParksParagrahElement = document.querySelector(".npUserChoice")
 nationalParksParagrahElement.innerHTML = npName
 
-const nationalParksDetailsElement = nationalParksDetails(nationalParksCollection, npName)
+nationalParksDetails(nationalParksCollection, npName)
+
 for (const currentNationalParksDetailsObject of nationalParksCollection.data) {
     if (currentNationalParksDetailsObject.fullName === npName) { 
         // after finding park get code zipcode and pass zipcode to weatherData
@@ -35,7 +36,6 @@ for (const currentNationalParksDetailsObject of nationalParksCollection.data) {
 
 }
 
-
 })
 
 
@@ -45,7 +45,7 @@ const nationalParksDetails = (nationalParkResponse, npName) => {
 
     for (const currentNationalParksDetailsObject of nationalParkResponse.data) {
         if (currentNationalParksDetailsObject.fullName === npName) {
-            const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
+            const nationalParksDetailsHTML = nationalParkDetailsConverter(currentNationalParksDetailsObject)
 
             const nationalParksDetailsElement = document.querySelector(".npButton")
             console.log(nationalParksDetailsHTML)

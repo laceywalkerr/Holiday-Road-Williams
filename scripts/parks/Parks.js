@@ -18,7 +18,17 @@ const nationalParksConverter = (nationalParksObject) => {
 // converts 1 np object into a html element, and only grabed the data i need to populate a np details in the itinerary preview
 const nationalParkDetailsConverter = (nationalParksObject) => {
     const npDetailsHTMLRepresentation = 
-    `<details>${nationalParksObject.id}</details`
+    `<details>
+        <ul>
+            <li>Description: ${nationalParksObject.description}<li>
+            <li>Phone Number: ${nationalParksObject.contacts.phoneNumbers[0].phoneNumber}<li>
+            <li>Address: ${nationalParksObject.addresses[0].line1} 
+                        ${nationalParksObject.addresses[0].city}, 
+                        ${nationalParksObject.addresses[0].stateCode}
+                        ${nationalParksObject.addresses[0].postalCode}
+            <li>
+        </ul>    
+    </details>`
     
     return npDetailsHTMLRepresentation
 }
