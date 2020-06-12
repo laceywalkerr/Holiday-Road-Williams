@@ -11,7 +11,7 @@ const weatherConverter = (weatherObject) => {
             <div>High / Low Temp: ${weatherObject.main.temp_max}&deg;</div>
             <div>Lowest Temp: ${weatherObject.main.temp_min}&deg;</div>
             <div>Humidity: ${weatherObject.main.humidity}</div>
-            <br>
+            <br> 
         </section>`
 
     return weatherHTMLRepresentation
