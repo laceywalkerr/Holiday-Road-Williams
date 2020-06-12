@@ -64,3 +64,9 @@ html {
     background-color: white;
     padding: 15px;
 }
+
+.itineraryPreview_weatherDetails {
+    padding: 15px;
+    border: 5px dotted #3b3a41;
+ 
+}

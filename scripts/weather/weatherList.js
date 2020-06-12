@@ -2,7 +2,7 @@
 const weatherList = (response) => {
     console.log(weatherCollection)
 
-    for (const currentweatherObject of response) {
+    for (const currentweatherObject of response.list) {
 
         const weatherHTML = weatherConverter(currentweatherObject)
 

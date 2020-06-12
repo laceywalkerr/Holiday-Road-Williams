@@ -12,8 +12,8 @@ getNationalParksData().then(
 
 getWeatherData().then(
     (response) => {
-        console.log(response.data)
-        weatherList(response.data)
+        console.log(response)
+        weatherList(response)
     }
 )
 
