@@ -4,8 +4,8 @@ getEateriesData().then(
     }
 )
 getNationalParksData().then(
-    (response) => {
-        nationalParksList(response.data)
+    (nationalParkResponse) => {
+        nationalParksList(nationalParkResponse.data)
         
     }
 )

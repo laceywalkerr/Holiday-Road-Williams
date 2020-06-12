@@ -1,10 +1,10 @@
   /* Responsible for creating a list of "quote HTML representations"
 and showing them on the browser.. this creates the platform for the quoteshtmlrep to place its compiled quote object */ 
 
-const nationalParksList = (response) => {
+const nationalParksList = (nationalParkResponse) => {
     console.log(nationalParksCollection)
 
-    for (const currentNationalParksObject of response) {
+    for (const currentNationalParksObject of nationalParkResponse) {
         
         const nationalParksHTML = nationalParksConverter(currentNationalParksObject)
 
@@ -30,18 +30,19 @@ nationalParksDetailsElement = nationalParksDetails()
 
 })
 
+
 //responsible for creating a list national park details to turn into an html "details" element and injected into our np itinerary previewer. 
-const nationalParksDetails = (response) => {
+const nationalParksDetails = (nationalParkResponse) => {
     console.log(nationalParksCollection)
 
-    for (const currentNationalParksDetailsObject of response) {
+    for (const currentNationalParksDetailsObject of nationalParkResponse.data) {
         
         const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
 
         const nationalParksDetailsElement = document.querySelector(".npButton")
         console.log(nationalParksDetailsHTML)
         nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
-return nationalParksDetailsHTML(response)
+
 
     }
 }
