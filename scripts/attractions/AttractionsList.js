@@ -14,7 +14,10 @@ const attractionList = (attractionCollection) => {
 const attractionDropdownBox = document.querySelector("#attractions_dropdown")
 
 attractionDropdownBox.addEventListener("change", (clickEvent) => {
-    let attractionUserChoice = clickEvent.target.value
+    const attractionName = clickEvent.target.value
+    const attractionParagraphElement = document.querySelector(".attractionItineraryChoice")
+
+    attractionParagraphElement.innerHTML += attractionName
     
     console.log(attractionUserChoice)
 
