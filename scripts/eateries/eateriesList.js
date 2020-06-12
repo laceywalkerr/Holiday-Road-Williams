@@ -16,14 +16,55 @@
 
 //Event Listener - Used to listen to user's choice of eatery and use choice to populate itinerary preview
 
-const eateryDropdownBox = document.querySelector("#eateries_dropdown")
 
-eateryDropdownBox.addEventListener("change", (clickEvent) => {
+
+const eateriesDropdownBox = document.querySelector("#eateries_dropdown")
+
+eateriesDropdownBox.addEventListener("change", (clickEvent) => {
+    
     // Get the value of the eatery chosen by the user
-    const eateryUserChoice = clickEvent.target.value
+    const eateriesUserChoice = clickEvent.target.value
 
-    console.log(eateryUserChoice)
+    const eateriesParagraphElement = document.querySelector(".eateriesItineraryChoice")
 
-    return eateryUserChoice
+    eateriesParagraphElement.innerHTML = eateriesUserChoice
     
 } )  
+
+
+
+//Event listener - for details dialog - used to listen to eateries_dropdown and pull description from API
+
+// const nationalParksDetails = (nationalParkResponse, npName) => {
+//     console.log(nationalParksCollection)
+
+//     for (const currentNationalParksDetailsObject of nationalParkResponse.data) {
+//         if (currentNationalParksDetailsObject.fullName === npName) {
+//             const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
+
+//             const nationalParksDetailsElement = document.querySelector(".npButton")
+//             console.log(nationalParksDetailsHTML)
+//             nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
+//         }
+
+//     }
+// }
+
+
+
+const eateriesDetails = (eateriesResponse, eateriesUserChoice) => {
+    console.log(eateriesCollection)
+
+    for (const eateriesDetailsObject of eateriesResponse) {
+        if (eateriesDetailsObject.businessName === eateriesUserChoice) {
+            const eateriesDetailsHTML = eateriesDetailsConverter(currentEateriesDetailsObject)
+
+            const eateriesDetailsElement = document.querySelector(".itineraryPreview_eateriesDetails")
+            console.log(eateriesDetailsHTML)
+            eateriesDetailsElement.innerHTML += eateriesDetailsHTML
+        }
+
+    }
+
+}
+    
