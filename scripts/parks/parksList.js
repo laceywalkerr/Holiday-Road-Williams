@@ -1,10 +1,10 @@
   /* Responsible for creating a list of "quote HTML representations"
 and showing them on the browser.. this creates the platform for the quoteshtmlrep to place its compiled quote object */ 
 
-const nationalParksList = (nationalParkResponse) => {
+const nationalParksList = (response) => {
     console.log(nationalParksCollection)
 
-    for (const currentNationalParksObject of nationalParkResponse) {
+    for (const currentNationalParksObject of response) {
         
         const nationalParksHTML = nationalParksConverter(currentNationalParksObject)
 
@@ -24,25 +24,24 @@ const npName = event.target.value
 const nationalParksParagrahElement = document.querySelector(".npUserChoice")
 nationalParksParagrahElement.innerHTML = npName
 
-const nationalParksDetailsElement = document.querySelector(".npButton")
-nationalParksDetailsElement = nationalParksDetails()
+const nationalParksDetailsElement = nationalParksDetails(nationalParksCollection, npName)
 
 
 })
 
 
-//responsible for creating a list national park details to turn into an html "details" element and injected into our np itinerary previewer. 
-const nationalParksDetails = (nationalParkResponse) => {
+// //responsible for creating a list national park details to turn into an html "details" element and injected into our np itinerary previewer. 
+const nationalParksDetails = (nationalParkResponse, npName) => {
     console.log(nationalParksCollection)
 
     for (const currentNationalParksDetailsObject of nationalParkResponse.data) {
-        
-        const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
+        if (currentNationalParksDetailsObject.fullName === npName) {
+            const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
 
-        const nationalParksDetailsElement = document.querySelector(".npButton")
-        console.log(nationalParksDetailsHTML)
-        nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
-
+            const nationalParksDetailsElement = document.querySelector(".npButton")
+            console.log(nationalParksDetailsHTML)
+            nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
+        }
 
     }
 }

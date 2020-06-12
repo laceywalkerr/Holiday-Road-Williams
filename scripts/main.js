@@ -4,18 +4,18 @@ getEateriesData().then(
     }
 )
 getNationalParksData().then(
-    (nationalParkResponse) => {
-        nationalParksList(nationalParkResponse.data)
-        
+    (response) => {
+        nationalParksList(response.data)
+
     }
 )
 
-// getWeatherData().then(
-//     (response) => {
-//         console.log(response.data)
-//         weatherList(response.data)
-//     }
-// )
+getWeatherData().then(
+    (response) => {
+        console.log(response)
+        weatherList(response)
+    }
+)
 
 getAttractionData().then(
     ()=> {

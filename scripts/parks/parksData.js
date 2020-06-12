@@ -2,11 +2,14 @@ let nationalParksCollection = []
 
 const getNationalParksData = () => {
     return fetch(`https://developer.nps.gov/api/v1/parks?&stateCode=co&limit=4&api_key=${API.npsKey}`).then(
-        (nationalParkResponse) => {
-            return nationalParkResponse.json()
+        (response) => {
+            return response.json()
            
         }
-    )
+    ).then( (response) => {
+        nationalParksCollection = response
+            return response
+    })
 
 }
 
