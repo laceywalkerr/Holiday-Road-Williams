@@ -16,6 +16,7 @@ Choose an Attraction
 Choose an Eatery
 View Details
 View Weather for the next 3 days in that Location
+Save selections to Itinerary
 
 	*Future Plans
 We would like to make this project more robust in the future, adding more content and more options for the most optimal planning possible.
