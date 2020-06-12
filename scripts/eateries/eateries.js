@@ -11,3 +11,18 @@ const eateriesConverter = (eateriesObject) => {
     return eateriesHTMLRepresentation
 
 }
+
+// Converter for Details Dialog Box
+const eateriesDetailsConverter = (eateriesDetailsObject) => {
+
+    const eateriesDetailsHTMLRepresentation = 
+
+    `${eateriesDetailsObject.description}`
+    
+
+    return eateriesDetailsHTMLRepresentation
+
+}
+
+
+

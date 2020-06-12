@@ -16,14 +16,35 @@
 
 //Event Listener - Used to listen to user's choice of eatery and use choice to populate itinerary preview
 
-const eateryDropdownBox = document.querySelector("#eateries_dropdown")
 
-eateryDropdownBox.addEventListener("change", (clickEvent) => {
+
+const eateriesDropdownBox = document.querySelector("#eateries_dropdown")
+
+eateriesDropdownBox.addEventListener("change", (clickEvent) => {
+    
     // Get the value of the eatery chosen by the user
-    const eateryUserChoice = clickEvent.target.value
+    const eateriesUserChoice = clickEvent.target.value
 
-    console.log(eateryUserChoice)
+    const eateriesParagraphElement = document.querySelector(".eateriesItineraryChoice")
 
-    return eateryUserChoice
+    eateriesParagraphElement.innerHTML = eateriesUserChoice
+    
+} )  
+
+
+
+//Event listener - for details dialog - used to listen to eateries_dropdown and pull description from API
+
+const eateriesDetailButton = document.querySelector("#eateries_dropdown")
+
+
+eateriesDropdownBox.addEventListener("change", (clickEvent) => {
+    
+    // Get the value of the eatery chosen by the user
+    const eateriesDetailsDescription = eateriesDetailsConverter(eateriesDetailsHTMLRepresentation)
+
+    const eateriesDetailsElement = document.querySelector(".itineraryPreview_eateriesDetails")
+
+    eateriesDetailsElement.innerHTML = eateriesDetailsDescription
     
 } )  
