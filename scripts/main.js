@@ -5,17 +5,17 @@ getEateriesData().then(
 )
 getNationalParksData().then(
     (response) => {
-        console.log(response.data)
         nationalParksList(response.data)
+        
     }
 )
 
-getWeatherData().then(
-    (response) => {
-        console.log(response.data)
-        weatherList(response.data)
-    }
-)
+// getWeatherData().then(
+//     (response) => {
+//         console.log(response.data)
+//         weatherList(response.data)
+//     }
+// )
 
 getAttractionData().then(
     ()=> {

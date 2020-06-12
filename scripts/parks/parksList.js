@@ -20,12 +20,31 @@ const npDropdownBox = document.querySelector("#nationalParks_dropdown")
 
 npDropdownBox.addEventListener("change", (event) => {
 const npName = event.target.value
-const nationalParksParagramElement = document.querySelector(".npUserChoice")
-nationalParksParagramElement.innerHTML = npName
+
+const nationalParksParagrahElement = document.querySelector(".npUserChoice")
+nationalParksParagrahElement.innerHTML = npName
+
+const nationalParksDetailsElement = document.querySelector(".npButton")
+nationalParksDetailsElement = nationalParksDetails()
 
 
 })
 
+//responsible for creating a list national park details to turn into an html "details" element and injected into our np itinerary previewer. 
+const nationalParksDetails = (response) => {
+    console.log(nationalParksCollection)
+
+    for (const currentNationalParksDetailsObject of response) {
+        
+        const nationalParksDetailsHTML = nationalParksConverter(currentNationalParksDetailsObject)
+
+        const nationalParksDetailsElement = document.querySelector(".npButton")
+        console.log(nationalParksDetailsHTML)
+        nationalParksDetailsElement.innerHTML += nationalParksDetailsHTML
+return nationalParksDetailsHTML(response)
+
+    }
+}
 
 
 
